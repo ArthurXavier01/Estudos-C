@@ -26,4 +26,18 @@ int main()
 	scanf("%d", &number);
 	getchar();
 	printf("Esse foi o valor digitado: %d", number);
+	getchar();
+	
+	
+	int num;
+	float nota;
+	
+	printf("Digite um valor: \n");
+	scanf("%d", &num);
+	getchar();
+	
+	printf("Digite a media: \n");
+	scanf("%f", &nota);
+	getchar();
+	getchar();
 }
