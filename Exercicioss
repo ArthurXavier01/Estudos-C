@@ -1,0 +1,82 @@
+ #include <stdio.h>
+#include <locale.h>
+
+int main()
+
+{
+	setlocale(0,"Portuguese");
+	
+	/*1) Faça um programa que leia duas notas e calcule a média
+destas notas e apresente o resultado. Repita para três alunos.*/
+	
+	int i;
+	float nota1, nota2, media;
+	
+	for(i = 1; i <= 3; i++){
+		printf("Digite a primeira nota e a segunda nota do aluno: ");
+		scanf("%f %f", &nota1, &nota2);
+		
+		media = (nota1 + nota2) / 2.0;
+		printf("A media final desse aluno é de: %.2f \n", media);
+	}
+	
+	
+	
+	/*Faça um programa que calcule a média de duas notas. Ao
+final dos cálculos pergunte ao usuário se ele quer realizar um
+novo cálculo. Se a resposta for 's' repita, para qualquer outra
+resposta saia do programa. */
+
+	char continuacao = '1';
+	
+	float nota1, nota2, media;
+	
+	while(continuacao == '1'){
+		printf("Digite a primeira nota e a segunda nota do aluno: ");
+		scanf("%f %f", &nota1, &nota2);
+		
+		media = (nota1 + nota2) / 2.0;
+		printf("A media final desse aluno é de: %.2f \n", media);
+		
+		printf("Deseja fazer mais um calculo? \n 1. Sim \n 2. Não \n Escolha: ");
+		scanf("%s", &continuacao);
+	}
+
+	
+	/*Desafio Joãozinho*/
+	
+	
+	/* com For */
+	
+	int count;
+	
+	for(count = 1; count < 500; count++){
+		printf("Não vou jogar mais avião \n");
+	}
+	
+	
+	/* Com While */
+	
+	
+	int count = 1;
+	
+	while(count <= 500){
+		printf("Não vou jogar mais avião \n");
+		count++;
+	}
+	
+	
+	/*Faça um programa em C que leia seu nome completo da
+entrada (stdin) letra a letras e as escreva uma em cada linha.
+
+Você poderá utilizar qualquer estrutura de repetição.	*/
+
+	char letra = ' ';
+	
+	printf("Digite seu nome completo: ");
+	while(letra != '\n'){
+		letra = getchar();
+		printf(" %c \n", letra);
+	}
+	
+}
