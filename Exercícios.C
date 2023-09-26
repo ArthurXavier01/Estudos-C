@@ -50,7 +50,7 @@ int main()
 int main()
 
 {
-	setlocale(0,"Portuguese");
+	setlocale(0,"portuguese");
 	
 	
 // Primeiro Exercicio
